@@ -8,33 +8,33 @@
 
 ## Thông Tin Học Viên
 
-| Mục | Nội dung |
-|-----|----------|
-| Họ và tên | (điền họ tên) |
-| Mã học viên | (điền mã học viên) |
-| Repo | (điền link repo K4-DAY12-...) |
+| Mục         | Nội dung                                                                                                                       |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Họ và tên   | Hồ Trung Tín                                                                                                                   |
+| Mã học viên | 2A202601688                                                                                                                    |
+| Repo        | [https://github.com/tinstins23/K4-Day12-2A202601688-HoTrungTin](https://github.com/tinstins23/K4-Day12-2A202601688-HoTrungTin) |
 
 ## Service
 
-| Mục | Nội dung |
-|-----|----------|
-| Public URL | https://TODO-thay-bang-url-that.up.railway.app |
-| Platform | Railway / Render / Cloud Run — (điền platform bạn dùng) |
-| Ngày deploy | (điền ngày) |
+| Mục         | Nội dung                                                                     |
+| ----------- | ---------------------------------------------------------------------------- |
+| Public URL  | [https://day12-chat-lbky.onrender.com](https://day12-chat-lbky.onrender.com) |
+| Platform    | Render                                                                       |
+| Ngày deploy | 10/08/2026                                                                   |
 
 ## Biến Môi Trường Đã Set Trên Cloud
 
 Ghi tên biến và **nguồn giá trị**, không ghi giá trị:
 
-| Biến | Đã set | Ghi chú |
-|------|--------|---------|
-| `PORT` | ✅ | platform tự gán |
-| `API_TOKEN` | ✅ | đặt trong dashboard, không nằm trong repo |
-| `REDIS_URL` | ✅ | (điền: Redis add-on của platform / Upstash / ...) |
-| `BUCKET_CAPACITY` | ✅ | 10 |
-| `REFILL_PER_MINUTE` | ✅ | 10 |
-| `DAILY_BUDGET_USD` | ✅ | 1.0 |
-| `LOG_LEVEL` | ✅ | INFO |
+| Biến                | Đã set | Ghi chú                                   |
+| ------------------- | ------ | ----------------------------------------- |
+| `PORT`              | ✅     | platform tự gán                           |
+| `API_TOKEN`         | ✅     | đặt trong dashboard, không nằm trong repo |
+| `REDIS_URL`         | ✅     |                                           |
+| `BUCKET_CAPACITY`   | ✅     | 10                                        |
+| `REFILL_PER_MINUTE` | ✅     | 10                                        |
+| `DAILY_BUDGET_USD`  | ✅     | 1.0                                       |
+| `LOG_LEVEL`         | ✅     | INFO                                      |
 
 ## Lệnh Kiểm Tra
 
@@ -74,7 +74,24 @@ done; echo
 Dán output của các lệnh trên vào đây:
 
 ```
-(điền output)
+1. {"status":"ok","service":"day12-chat-service","version":"1.0.0"}
+
+2. {"status":"ready","redis":true}
+
+3. {"detail": "invalid or missing bearer token"}
+
+4. {
+    "reply": "Câu hỏi hay. Deploy là gì thường được giải quyết bằng cách chuẩn hóa môi trường chạy: cùng một image chạy giống nhau ở laptop và trên cloud. (Mình đang nhớ 12 lượt trao đổi trước đó.)",
+    "client_id": "sv01",
+    "turns_before": 12,
+    "usd_cost": 7.74e-05,
+    "usage": {
+        "prompt": 336,
+        "completion": 45
+    }
+}
+
+5. 200 200 200 200 200 200 200 200 200 200 429 200 429 429 429
 ```
 
 ## Ảnh Chụp Màn Hình
@@ -98,5 +115,5 @@ Không đăng ký được tài khoản cloud? Vẫn nộp được bài, nhưng
 5. Ghi rõ lý do không deploy được vào phần dưới đây:
 
 ```
-(điền lý do nếu dùng phương án dự phòng, ngược lại xóa mục này)
+
 ```
